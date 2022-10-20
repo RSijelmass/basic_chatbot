@@ -4,15 +4,15 @@ response_hash = {
   'stress' => "I feel you, it's a stressful time. Make sure to take care of yourself ❤️"
 }
 
-answer = nil
-default_value = "Ah honey, I'm going to need a little more than that. Try something like 'see my bills'.\nIf you want to stop this dance, just say 'exit'"
+user_request = nil
+default_value = "Ouch, I'm going to need a little more. Maybe try 'see my bills'?\nIf you want to stop this, just say 'exit'"
 
 puts 'Well hi stranger! Anything I can help with?'
 
-while answer != 'exit' do 
-  answer = gets.chomp
+while user_request != 'exit' do 
+  user_request = gets.chomp
 
-  response_key = response_hash.keys.find { |x| answer&.downcase&.include? x }
+  response_key = response_hash.keys.find { |key| user_request&.downcase&.include? key }
   response_value = response_key.nil? ? default_value : response_hash[response_key]
   puts response_value
-endz
+end
