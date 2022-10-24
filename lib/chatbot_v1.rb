@@ -1,7 +1,8 @@
 response_hash = {
   'can i afford' => "If you have to ask, it's probably a no",
-  'bills' => "Your bills of the week: they're not looking good",
-  'stress' => "I feel you, it's a stressful time. Make sure to take care of yourself ❤️"
+  'bills' => "Uber: $55\nMcDonalds: $16.50\nAmazon: $79.99\n\nThat's looking like a big week.",
+  'stress' => "I feel you, it's a stressful time. Make sure to take care of yourself ❤️",
+  'thanks' => "you're welcome :)",
 }
 
 user_request = nil
